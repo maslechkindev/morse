@@ -1,0 +1,23 @@
+#messages {
+    border: 1px solid #666;
+    width: 30%;
+    min-height: 20px;
+    padding: 15px;
+    list-style-type: none;
+}
+
+#messages li {
+    border: 1px solid #bfbaba;
+    padding: 5px;
+    background: #dbdbdb;
+    margin: 2px;
+}
+
+#morse-error, #login-error {
+    color: #f10f0f;
+    display: none;
+}
+
+#decode-button {
+    display: none;
+}

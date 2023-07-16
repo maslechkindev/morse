@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Chat Morze</title>
+</head>
+<body>
+<div>
+  <ul id="messages"></ul>
+</div>
+<div>
+  <select id="users"></select>
+</div>
+
+<div>
+  <input id="message" type="text" />
+  <button onclick="handleSubmitNewMessage()">Submit</button>
+  <button id="decode-button" onclick="handleDecodeNewMessage()">Decode</button>
+</div>
+<div>
+  <p id="morse-error">String not morse code</p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.0/socket.io.js"></script>
+<script src="./morze-api.js"></script>
+<script src="./chat-socket.js"></script>
+<script src="./users.js"></script>
+</body>
+</html>

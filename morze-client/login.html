@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Chat Morze</title>
+</head>
+<body>
+
+<div>
+  <label>email</label>
+  <input id="username" name="username" type="text" />
+  <label>password</label>
+  <input id="password" type="password" name="password" />
+  <button onclick="handleLogin()">Submit</button>
+</div>
+<div>
+  <p id="login-error">Wrong password or email</p>
+</div>
+
+<script src="./morze-api.js"></script>
+<script src="./users.js"></script>
+</body>
+</html>
